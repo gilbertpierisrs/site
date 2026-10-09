@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gilbert Pieris — Cloud Engineer CV</title>
+  <meta name="description" content="CV of Gilbert Pieris, Azure Cloud Engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-initials" aria-hidden="true">GP</span>
+        <span class="brand-name">Gilbert Pieris</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="print-btn" class="btn btn-ghost" type="button" title="Download as PDF">Download PDF</button>
+        <button id="theme-toggle" class="btn btn-icon" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Azure Cloud Engineer</p>
+          <h1>Gilbert Pieris</h1>
+          <p class="lede">
+            Cloud infrastructure engineer specializing in Microsoft Azure — automation,
+            governance, monitoring, and cost optimization at scale.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#experience">View experience</a>
+          </div>
+          <ul class="hero-meta">
+            <li><span>📍</span> Your City, Country</li>
+            <li><span>✉️</span> <a href="mailto:you@example.com">you@example.com</a></li>
+            <li><span>🔗</span> <a href="https://github.com/gilbertpierisrs" target="_blank" rel="noopener">github.com/gilbertpierisrs</a></li>
+          </ul>
+        </div>
+        <div class="hero-avatar" aria-hidden="true">
+          <div class="avatar-ring">
+            <span>GP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="prose">
+          I design and automate reliable cloud platforms on Microsoft Azure. My work spans
+          infrastructure-as-code, patch and update management, network security, Key Vault
+          and certificate automation, and building monitoring workbooks and KQL-based alerting.
+          I focus on repeatable automation, strong governance, and keeping environments secure
+          and cost-efficient.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <h3>Senior Cloud Engineer</h3>
+              <span class="timeline-dates">2022 — Present</span>
+            </div>
+            <p class="timeline-org">Company Name · Full-time</p>
+            <ul class="bullets">
+              <li>Automated Azure Update Manager patch workflows and failure notifications with PowerShell and runbooks.</li>
+              <li>Built monitoring workbooks and KQL alerts for VM utilization, storage, and patch compliance.</li>
+              <li>Standardized network security group cloning and NAT gateway provisioning across subscriptions.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <h3>Cloud Engineer</h3>
+              <span class="timeline-dates">2019 — 2022</span>
+            </div>
+            <p class="timeline-org">Company Name · Full-time</p>
+            <ul class="bullets">
+              <li>Managed Key Vault certificate sync and SSL automation for App Gateway and Front Door.</li>
+              <li>Delivered VM inventory, backup status, and disk encryption reporting.</li>
+              <li>Supported in-place OS upgrades and availability zone migrations.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Cloud &amp; Infra</h3>
+            <ul class="chips">
+              <li>Microsoft Azure</li><li>ARM / Bicep</li><li>Azure Policy</li>
+              <li>App Gateway</li><li>Front Door</li><li>Key Vault</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Automation</h3>
+            <ul class="chips">
+              <li>PowerShell</li><li>Az Modules</li><li>Automation Runbooks</li>
+              <li>CLI</li><li>Bash</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Monitoring</h3>
+            <ul class="chips">
+              <li>KQL</li><li>Log Analytics</li><li>Azure Monitor</li>
+              <li>Workbooks</li><li>Resource Graph</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Practices</h3>
+            <ul class="chips">
+              <li>IaC</li><li>Governance</li><li>Cost Optimization</li>
+              <li>Patch Management</li><li>Security</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Azure Update Manager Automation</h3>
+            <p>PowerShell + runbooks that notify on patch failures and report compliance across subscriptions.</p>
+            <a class="project-link" href="https://github.com/gilbertpierisrs/Azure" target="_blank" rel="noopener">View repo →</a>
+          </article>
+          <article class="project-card">
+            <h3>Monitoring Workbooks &amp; KQL</h3>
+            <p>Reusable Azure Monitor workbooks and KQL queries for utilization, cost, and governance.</p>
+            <a class="project-link" href="https://github.com/gilbertpierisrs/Azure" target="_blank" rel="noopener">View repo →</a>
+          </article>
+          <article class="project-card">
+            <h3>Key Vault &amp; SSL Automation</h3>
+            <p>Certificate sync and SSL binding automation for App Gateway and Front Door.</p>
+            <a class="project-link" href="https://github.com/gilbertpierisrs/Azure" target="_blank" rel="noopener">View repo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Contact</h2>
+        <p class="prose">Open to opportunities and collaboration. Reach out any time.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:you@example.com">✉️ Email me</a>
+          <a class="btn btn-ghost" href="https://github.com/gilbertpierisrs" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gilbert Pieris. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
